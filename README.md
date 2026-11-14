@@ -6,9 +6,9 @@
 
 MiniGPT-From-Scratch is an educational Generative AI project focused on understanding and implementing the fundamental concepts behind GPT-style language models.
 
-The project follows a step-by-step approach to building a small language model, starting from text preparation and tokenization to self-attention, multi-head attention, transformer decoder architecture, model training, and text generation.
+This project follows a step-by-step approach to building a small language model, starting from text preparation and tokenization to self-attention, multi-head attention, transformer decoder architecture, model training, and text generation.
 
-The primary objective is to understand how transformer-based language models work internally by implementing their core components using Python and PyTorch.
+The main objective is to understand how transformer-based language models work internally by implementing their core components using Python and PyTorch.
 
 ## 🎯 Project Objectives
 
@@ -43,7 +43,6 @@ MiniGPT-From-Scratch/
 │   └── val_ids.npy
 │
 ├── models/
-│   ├── .gitkeep
 │   ├── bigram_model.pth
 │   └── transformer_decoder.pth
 │
@@ -72,7 +71,7 @@ MiniGPT-From-Scratch/
 
 ## 🧠 Project Implementation
 
-The project is divided into eight Jupyter notebooks:
+The project is divided into eight Jupyter notebooks.
 
 ### 1. Data Preparation and Tokenization
 
@@ -99,7 +98,7 @@ The project is divided into eight Jupyter notebooks:
 
 - Implement multiple attention heads.
 - Combine information from different attention heads.
-- Understand how multi-head attention improves contextual representation.
+- Understand contextual representations.
 
 ### 5. Transformer Decoder
 
@@ -125,6 +124,45 @@ The project is divided into eight Jupyter notebooks:
 - Analyze model performance.
 - Experiment with different temperature values.
 - Compare generated text outputs.
+
+## 📊 Training Loss Visualization
+
+The following graph represents the training progress of the Transformer Decoder model.
+
+![Training Loss Visualization](outputs/training_loss.png)
+
+The training loss visualization helps monitor the model's learning process and understand how the loss changes during training.
+
+## ✍️ Text Generation Results
+
+The trained Transformer Decoder model generates text by predicting the next token based on previously generated tokens.
+
+The project saves generated text outputs in the `outputs/` directory.
+
+### Transformer Generated Text
+
+The generated text from the trained Transformer Decoder model can be viewed here:
+
+📄 [View Transformer Generated Text](outputs/transformer_generated_text.txt)
+
+### Other Generated Text
+
+📄 [View Generated Text](outputs/generated_text.txt)
+
+### Generation Experiments
+
+📄 [View Temperature Experiments](outputs/temperature_experiments.txt)
+
+## 📁 Additional Model Results
+
+| Output File | Description |
+|---|---|
+| `training_loss.png` | Training loss visualization |
+| `training_history.json` | Training history |
+| `model_evaluation.json` | Model evaluation results |
+| `generated_text.txt` | Generated text output |
+| `transformer_generated_text.txt` | Transformer-generated text |
+| `temperature_experiments.txt` | Temperature experiment results |
 
 ## ⚙️ Installation and Setup
 
@@ -174,19 +212,6 @@ jupyter notebook
 
 Open the `notebooks/` directory and execute the notebooks in numerical order.
 
-## 📊 Project Outputs
-
-The project generates and saves the following results:
-
-| Output File | Description |
-|---|---|
-| `generated_text.txt` | Generated text output |
-| `transformer_generated_text.txt` | Text generated using the Transformer model |
-| `training_loss.png` | Training loss visualization |
-| `training_history.json` | Training history |
-| `model_evaluation.json` | Model evaluation results |
-| `temperature_experiments.txt` | Temperature experiment results |
-
 ## 📚 Key Concepts Learned
 
 Through this project, I explored and implemented:
@@ -219,9 +244,10 @@ MCA Student | Aspiring AI/ML Engineer
 
 Interested in Artificial Intelligence, Machine Learning, Deep Learning, and Generative AI.
 
+**GitHub:** [koladiyaheena](https://github.com/koladiyaheena)
+
+**Project Repository:** [MiniGPT-From-Scratch](https://github.com/koladiyaheena/MiniGPT-From-Scratch-)
+
 ---
 
 ⭐ If you find this project useful for learning the fundamentals of GPT-style language models, feel free to explore the notebooks and experiment with the implementation.
-
-**GitHub Repository:**  
-https://github.com/koladiyaheena/MiniGPT-From-Scratch-
